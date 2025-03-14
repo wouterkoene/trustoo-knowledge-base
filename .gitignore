@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+vector_store_id.txt
+processed_documents.json
+processed_conversations.json
+temp_*.json
+*.xlsx
+*.docx
+
+# Slack data (private)
+channels.json
+users.json
+huddle_transcripts.json
+integration_logs.json
+file_conversations.json
+lists.json
+canvases.json
+cs-es/
+customer-success/
+help/
+product-changes/
+review-response/
+suggestion-box/
+
+# Environment variables
+.env
+
+# Logs
+*.log 
