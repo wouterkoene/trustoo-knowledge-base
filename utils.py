@@ -23,10 +23,8 @@ def get_openai_key():
         raise
 
 def get_openai_client():
-    """Get OpenAI client with API key."""
-    api_key = os.getenv('OPENAI_API_KEY')
-    if not api_key:
-        raise ValueError("OpenAI API key not found in environment variables")
+    """Get OpenAI client with API key from AWS Secrets Manager."""
+    api_key = get_openai_key()
     return OpenAI(api_key=api_key)
 
 def detect_language(text: str) -> str:

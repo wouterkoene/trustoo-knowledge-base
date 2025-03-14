@@ -23,10 +23,10 @@ A smart search system for Trustoo's internal knowledge base, powered by OpenAI's
 pip install -r requirements.txt
 ```
 
-2. Set up environment variables:
-```bash
-OPENAI_API_KEY=your_api_key_here
-```
+2. Set up AWS Secrets Manager:
+   - Create a secret named "api_key_openai" in AWS Secrets Manager
+   - Store your OpenAI API key in the secret under the key "api_key"
+   - Ensure your AWS credentials are properly configured
 
 3. Process documents:
 ```bash
